@@ -1,12 +1,1 @@
-version: '3.8'
-
-services:
-  rabbitmq:
-    image: rabbitmq:3-management
-    container_name: rabbitmq
-    ports:
-      - "5672:5672"    # Porta para comunicação com a aplicação
-      - "15672:15672"  # Painel de administração
-    environment:
-      RABBITMQ_DEFAULT_USER: guest
-      RABBITMQ_DEFAULT_PASS: guest
+FROM rabbitmq:3-management
